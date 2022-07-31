@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1530px;
+    background-color: #F3AE5F;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.site-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.site-list__item {
+    padding-right: 30px;
+}
+
+.site-list__link,
+.form__link {
+    color: white;
+}
+
+.slogan__picture {
+    position: relative;
+    width: 1530px;
+    height: auto;
+}
+
+.slogan__title {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    font-size: 50;
+    color: #fff;
+    line-height: 2em;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.courses__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-us__title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-us__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+}
+
+.about-us__item {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-top: 25px;
+    list-style: none;
+}
+
+.about-us__img {
+    width: 250px;
+    height: 200px;
+}
+
+.about-us__text {
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* Форма регистрации */
+
+.popup-reg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup-reg:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.popup-reg:target .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.popup__link {
+    color: #fff;
+    padding: 0 10px 0 10px;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+
+.popup__close {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 25px;
+    top: 20px;
+    text-decoration: none;
+    font-size: 0;
+    cursor: pointer;
+}
+
+
+.popup__close::before,
+.popup__close::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    right: 0;
+    border-radius: 3px;
+    background-color: #000;
+}
+
+.popup__close::before {
+    transform: rotate(45deg);
+}
+
+.popup__close::after {
+    transform: rotate(-45deg);
+}
+
+
+.form-block {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 450px;
+}
+
+.form__user {
+    height: 300px;
+    border: none;
+}
+
+.user__list {
+    margin: 0;
+    padding: 0;
+}
+
+.user__item {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+.user__input {
+    margin-top: 5px;
+    height: 25px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.user__input:focus {
+    border: 2px solid #F3AE5F;
+    transform: translateX(10px);
+}
+
+label {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.user__submit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    color: white;
+    background: #F3AE5F;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: .80;
+    font-weight: bold;
+}
+
+/* Форма авторизации */
+
+.popup-inp {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup-inp:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.popup-inp:target .popup-inp__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.popup-inp__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup-inp__content {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+.popup-inp__title {
+    text-align: center;
+}
+
+.popup-inp__close {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 25px;
+    top: 20px;
+    text-decoration: none;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.popup-inp__close::before,
+.popup-inp__close::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    right: 0;
+    border-radius: 3px;
+    background-color: #000;
+}
+
+.popup-inp__close::before {
+    transform: rotate(45deg);
+}
+
+.popup-inp__close::after {
+    transform: rotate(-45deg);
+}
+
+.form-inp {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+
+.form-inp__user {
+    height: 300px;
+    border: none;
+}
+
+.user-inp__list {
+    margin: 0;
+    padding: 0;
+}
+
+.user-inp__item {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+.user-inp__input {
+    margin-top: 5px;
+    height: 25px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.user-inp__input:focus {
+    border: 2px solid #F3AE5F;
+    transform: translateX(10px);
+}
+
+.user-inp__submit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forget {
+    display: block;
+    padding: 0 0 30px;
+    text-align: center;
+    color: #F3AE5F;
+    text-decoration: none;
+}
+
+.forget:hover {
+    font-weight: bold;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3AE5F;
+}
