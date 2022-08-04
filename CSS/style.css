@@ -74,6 +74,7 @@ img {
     left: 250px;
     font-size: 50;
     color: #fff;
+    letter-spacing: 7px;
     line-height: 2em;
 }
 
@@ -81,15 +82,29 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin: 0;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    width: 1200px;
 }
 
 .courses__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 260px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.courses__link {
+    color: #000;
+}
+
+.courses__text {
+    font-family: Roboto, Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
 }
 
 .about-us__title {
@@ -353,7 +368,7 @@ button:hover {
 
 
 .form-inp__user {
-    height: 300px;
+    height: 220px;
     border: none;
 }
 
@@ -387,7 +402,7 @@ button:hover {
 
 .forget {
     display: block;
-    padding: 0 0 30px;
+    padding-top: 30px;
     text-align: center;
     color: #F3AE5F;
     text-decoration: none;
