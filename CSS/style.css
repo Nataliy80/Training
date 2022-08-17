@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* min-width: 1200px; */
     color: #000000;
     background-color: #ffffff;
     font-family: Roboto, Arial, sans-serif;
@@ -95,8 +94,6 @@ main {
 .slogan__picture {
     position: relative;
     min-width: 1580px;
-    */
-    /* height: auto; */
 }
 
 .slogan__title {
