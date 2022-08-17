@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     color: #000000;
     background-color: #ffffff;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.2;
 }
 
 a {
@@ -30,49 +30,79 @@ img {
     clip: rect(0 0 0 0);
 }
 
-.page-header {
+.wrapper {
+    overflow: hidden;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1530px;
-    background-color: #F3AE5F;
-    color: white;
-    font-size: 18px;
-    line-height: 18px;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #F3AE5F;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.header__logo {
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
 
 }
 
-.site-list {
+.menu__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0;
     text-transform: uppercase;
     list-style: none;
 }
 
-.site-list__item {
-    padding-right: 30px;
+.menu__link {
+    margin-right: 70px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
-.site-list__link,
-.form__link {
-    color: white;
+.menu__link:hover {
+    text-decoration: underline;
 }
+
+main {
+    flex: 1 1 auto;
+}
+
 
 .slogan__picture {
     position: relative;
-    width: 1530px;
-    height: auto;
+    min-width: 1580px;
+    */
+    /* height: auto; */
 }
 
 .slogan__title {
     position: absolute;
     top: 100px;
     left: 250px;
-    font-size: 50;
     color: #fff;
     letter-spacing: 7px;
     line-height: 2em;
@@ -105,6 +135,11 @@ img {
     padding: 10px;
     text-align: center;
     text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.about-us {
+    min-height: 550px;
 }
 
 .about-us__title {
@@ -117,25 +152,29 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .about-us__item {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     width: 480px;
+    height: auto;
     margin-top: 25px;
     list-style: none;
 }
 
 .about-us__img {
-    width: 250px;
-    height: 200px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
 }
 
 .about-us__text {
     margin: 0;
-    padding-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
 /* Форма регистрации */
@@ -159,15 +198,24 @@ img {
     visibility: visible;
 }
 
-
 .popup-reg:target .popup__content {
     transform: translate(0px, 0px);
     opacity: 1;
 }
 
+.form__link {
+    color: white;
+}
+
 .popup__link {
+    font-family: Roboto;
     color: #fff;
     padding: 0 10px 0 10px;
+    text-transform: uppercase;
+}
+
+.popup__link:hover {
+    font-weight: bold;
 }
 
 .popup__body {
@@ -414,7 +462,7 @@ button:hover {
 
 .page-footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background-color: #F3AE5F;
 }
@@ -431,20 +479,78 @@ button:hover {
     text-transform: uppercase;
 }
 
-.contact__list,
 .social__list {
-    list-style: none;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
 }
 
-.contact__item,
-.social__item {
+.contact__list,
+.social__list {
+    list-style: none;
+}
+
+
+.contact__item {
     padding-top: 15px;
+}
+
+.social__item {
+    padding-right: 70px;
+}
+
+.social__link:hover {
+    font-size: 20px;
 }
 
 .contact__phone,
 .contact__mail,
 .contact__adress {
     color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .header__container {
+        max-width: 1170px;
+        min-height: 70px;
+    }
+
+    .menu__link {
+        margin-right: 50px;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .popup__link {
+        padding: 0 5px 0 5px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .header__container {
+        max-width: 970px;
+        padding: 0 11px;
+    }
+
+    .menu__link {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    .popup__link {
+        font-size: 12px;
+    }
+
+    .header__logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social__item {
+        padding-right: 50px;
+    }
+
 }
