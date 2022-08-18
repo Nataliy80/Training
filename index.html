@@ -19,9 +19,9 @@
                 </a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Курсы</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Преподаватели</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a href="#courses" class="menu__link">Курсы</a></li>
+                        <li class="menu__item"><a href="#teachers" class="menu__link">Преподаватели</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__popup">
@@ -33,12 +33,18 @@
 
         <main class="page-main">
             <section class="slogan">
-                <img class="slogan__picture" src="img/balloons-04.jpg" alt="фото шаров">
+                <picture>
+                    <source srcset="img/balloons1500.jpg" type="image/jpg" media="min-width:1330px">
+                    <source srcset="img/balloons800.jpg" type="image/jpg" media="min-width:992px">
+                    <source srcset="img/balloons400.jpg" type="image/jpg" media="max-width:992px">
+                    <img class="slogan__picture" src="img/balloons1500.jpg" alt="фото шаров">
+                </picture>
                 <h1 class="slogan__title">УЧИСЬ!<br> ИГРАЙ!<br> МЕЧТАЙ!</h1>
             </section>
 
-            <div class="courses">
+            <div id="courses" class="courses">
                 <section class="speed-reading courses__item">
+                    <h2 class="visually-hidden">Курсы</h2>
                     <a class="courses__link" href="#">
                         <h2 class="courses__title">Скорочтение</h2>
                     </a>
@@ -58,7 +64,8 @@
                         iusto,
                         deleniti unde repellat natus voluptatibus
                         consectetur corporis tempore, hic accusamus dicta non dolorum! Veritatis harum neque vitae
-                        reiciendis!</p>
+                        reiciendis!
+                    </p>
                 </section>
 
                 <section class="logopediy courses__item">
@@ -73,12 +80,12 @@
                 </section>
             </div>
             <hr>
-            <section class="about-us">
-                <a id="teacher"></a>
+
+            <div id="teachers" class="about-us">
                 <h2 class="about-us__title">Наши преподаватели</h2>
                 <ul class="about-us__list">
                     <li class="about-us__item">
-                        <img class="about-us__img" src="img/teacher1.png" alt="foto">
+                        <img class="about-us__img" src="img/teacher001.png" alt="foto">
                         <a href="#">
                             <h3 class="about-us__caption">Lorem ipsum dolor</h3>
                         </a>
@@ -88,7 +95,7 @@
                         </p>
                     </li>
                     <li class="about-us__item">
-                        <img class="about-us__img" src="img/teacher2.png" alt="foto">
+                        <img class="about-us__img" src="img/teacher002.png" alt="foto">
                         <a href="#">
                             <h3 class="about-us__caption">Lorem ipsum dolor</h3>
                         </a>
@@ -98,7 +105,7 @@
                         </p>
                     </li>
                     <li class="about-us__item">
-                        <img class="about-us__img" src="img/teacher3.png" alt="foto">
+                        <img class="about-us__img" src="img/teacher003.png" alt="foto">
                         <a href="#">
                             <h3 class="about-us__caption">Lorem ipsum dolor</h3>
                         </a>
@@ -108,10 +115,10 @@
                         </p>
                     </li>
                 </ul>
-            </section>
+            </div>
         </main>
 
-        <footer class="page-footer">
+        <footer id="contact" class="page-footer">
             <section class="page-footer__contact contact">
                 <p class="contact__title">Наши контакты</p>
                 <ul class="contact__list">

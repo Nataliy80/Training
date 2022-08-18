@@ -90,10 +90,8 @@ main {
     flex: 1 1 auto;
 }
 
-
 .slogan__picture {
     position: relative;
-    min-width: 1580px;
 }
 
 .slogan__title {
@@ -110,8 +108,7 @@ main {
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0 auto;
-    padding: 50px 0 50px 0;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .courses__item {
@@ -124,11 +121,13 @@ main {
 }
 
 .courses__link {
+    text-align: center;
     color: #000;
 }
 
 .courses__text {
     font-family: Roboto, Arial, sans-serif;
+    margin: 0;
     padding: 10px;
     text-align: center;
     text-overflow: ellipsis;
@@ -163,7 +162,6 @@ main {
 }
 
 .about-us__img {
-    width: 50%;
     box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
 }
 
@@ -171,6 +169,7 @@ main {
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: center;
 
 }
 
@@ -232,7 +231,6 @@ main {
     transform: translate(0px, -100%);
 }
 
-
 .popup__close {
     position: absolute;
     width: 21px;
@@ -243,7 +241,6 @@ main {
     font-size: 0;
     cursor: pointer;
 }
-
 
 .popup__close::before,
 .popup__close::after {
@@ -480,6 +477,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -490,11 +488,18 @@ button:hover {
 
 
 .contact__item {
+    text-align: center;
     padding-top: 15px;
 }
 
+
 .social__item {
+    text-align: center;
     padding-right: 70px;
+}
+
+.social__item:last-child {
+    padding-right: 0;
 }
 
 .social__link:hover {
@@ -524,6 +529,14 @@ button:hover {
         font-size: 14px;
     }
 
+    .slogan__title {
+        left: 150px;
+    }
+
+    .about-us {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -546,8 +559,50 @@ button:hover {
         height: 30px;
     }
 
+    .slogan__title {
+        font-size: 20px;
+        top: 70px;
+        left: 70px;
+    }
+
     .social__item {
         padding-right: 50px;
+    }
+
+    .courses {
+        padding: 20px 40px;
+    }
+
+    .courses__item {
+        min-height: 170px;
+    }
+
+    .courses__title,
+    .about-us__title {
+        font-size: 20px;
+    }
+
+    .courses__text,
+    .about-us__text {
+        font-size: 14px;
+    }
+
+    .about-us__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .about-us__title {
+        margin-top: 25px;
+    }
+
+    .about-us__caption {
+        font-size: 18px;
+    }
+
+    .social__item {
+        padding-right: 30px;
     }
 
 }
