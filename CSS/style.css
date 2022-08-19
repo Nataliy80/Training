@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -484,12 +490,14 @@ button:hover {
     list-style: none;
 }
 
+.contact__list {
+    padding: 0;
+}
 
 .contact__item {
     text-align: center;
     padding-top: 15px;
 }
-
 
 .social__item {
     text-align: center;
