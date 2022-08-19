@@ -261,7 +261,6 @@ main {
     transform: rotate(-45deg);
 }
 
-
 .form-block {
     margin: 0 auto;
     margin-top: 20px;
@@ -407,7 +406,6 @@ button:hover {
     width: 400px;
     height: 400px;
 }
-
 
 .form-inp__user {
     height: 220px;
@@ -592,7 +590,6 @@ button:hover {
         align-items: center;
     }
 
-
     .about-us__title {
         margin-top: 25px;
     }
@@ -603,6 +600,46 @@ button:hover {
 
     .social__item {
         padding-right: 30px;
+    }
+
+    .popup__body {
+        padding: 15px 5px;
+    }
+
+    .form-block {
+        width: 300px;
+        height: 350px;
+    }
+
+    .form__user {
+        height: 250px;
+    }
+
+    .user__input {
+        width: 250px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 7px 20px;
+        height: 35px;
+    }
+
+    .popup-inp__body {
+        padding: 15px 5px;
+    }
+
+    .form-inp {
+        width: 300px;
+        height: 350px;
+    }
+
+    .user-inp__input {
+        width: 250px;
+
     }
 
 }
