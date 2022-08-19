@@ -152,7 +152,7 @@ main {
 .about-us__list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0;
     padding: 0 20px 0 20px;
 }
@@ -650,4 +650,20 @@ button:hover {
 
     }
 
+}
+
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+    }
+
+    .courses__item {
+        height: auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .menu__list {
+        flex-direction: column;
+    }
 }
