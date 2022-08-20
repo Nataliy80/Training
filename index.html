@@ -17,17 +17,23 @@
                 <a href="#" class="header__logo visually-hidden">
                     <img class="visually-hidden" src="#" alt="logo">
                 </a>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#courses" class="menu__link">Курсы</a></li>
-                        <li class="menu__item"><a href="#teachers" class="menu__link">Преподаватели</a></li>
-                        <li class="menu__item"><a href="#contact" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a data-goto=".page__section_1" href="#" class="menu__link">Курсы</a>
+                        </li>
+                        <li class="menu__item"><a data-goto=".page__section_2" href="#"
+                                class="menu__link">Преподаватели</a></li>
+                        <li class="menu__item"><a data-goto=".page__section_3" href="#" class="menu__link">Контакты</a>
+                        </li>
                     </ul>
+                    <div class="header__popup">
+                        <a href="#popup-reg" class="popup__link">Регистрация</a>
+                        <a href="#popup-inp" class="popup__link">Вход</a>
+                    </div>
                 </nav>
-                <div class="header__popup">
-                    <a href="#popup-reg" class="popup__link">Регистрация</a>
-                    <a href="#popup-inp" class="popup__link">Вход</a>
-                </div>
             </div>
         </header>
 
@@ -42,7 +48,7 @@
                 <h1 class="slogan__title">УЧИСЬ!<br> ИГРАЙ!<br> МЕЧТАЙ!</h1>
             </section>
 
-            <div id="courses" class="courses">
+            <div class="courses page__section page__section_1">
                 <section class="speed-reading courses__item">
                     <h2 class="visually-hidden">Курсы</h2>
                     <a class="courses__link" href="#">
@@ -81,7 +87,7 @@
             </div>
             <hr>
 
-            <div id="teachers" class="about-us">
+            <div class="about-us page__section page__section_2">
                 <h2 class="about-us__title">Наши преподаватели</h2>
                 <ul class="about-us__list">
                     <li class="about-us__item">
@@ -118,7 +124,7 @@
             </div>
         </main>
 
-        <footer id="contact" class="page-footer">
+        <footer class="page-footer page__section page__section_3">
             <section class="page-footer__contact contact">
                 <h3 class="contact__title">Наши контакты</h3>
                 <ul class="contact__list">
