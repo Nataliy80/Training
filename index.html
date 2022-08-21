@@ -22,106 +22,111 @@
                 </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a data-goto=".page__section_1" href="#" class="menu__link">Курсы</a>
+                        <li class="menu__item">
+                            <a data-goto=".page__section_1" href="#" class="menu__link">Курсы</a>
                         </li>
-                        <li class="menu__item"><a data-goto=".page__section_2" href="#"
-                                class="menu__link">Преподаватели</a></li>
-                        <li class="menu__item"><a data-goto=".page__section_3" href="#" class="menu__link">Контакты</a>
+                        <li class="menu__item">
+                            <a data-goto=".page__section_2" href="#" class="menu__link">Преподаватели</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".page__section_3" href="#" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#popup-reg" class="popup__link">Регистрация</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#popup-inp" class="popup__link">Вход</a>
                         </li>
                     </ul>
-                    <div class="header__popup">
-                        <a href="#popup-reg" class="popup__link">Регистрация</a>
-                        <a href="#popup-inp" class="popup__link">Вход</a>
-                    </div>
                 </nav>
             </div>
         </header>
 
-        <main class="page-main">
-            <section class="slogan">
-                <picture>
-                    <source srcset="img/balloons1500.jpg" type="image/jpg" media="min-width:1330px">
-                    <source srcset="img/balloons800.jpg" type="image/jpg" media="min-width:992px">
-                    <source srcset="img/balloons400.jpg" type="image/jpg" media="max-width:992px">
-                    <img class="slogan__picture" src="img/balloons1500.jpg" alt="фото шаров">
-                </picture>
-                <h1 class="slogan__title">УЧИСЬ!<br> ИГРАЙ!<br> МЕЧТАЙ!</h1>
+        <main class="page-main"></main>
+        <section class="slogan">
+            <picture>
+                <source srcset="img/balloons1500.jpg" type="image/jpg" media="min-width:1330px">
+                <source srcset="img/balloons800.jpg" type="image/jpg" media="min-width:992px">
+                <source srcset="img/balloons400.jpg" type="image/jpg" media="max-width:992px">
+                <img class="slogan__picture" src="img/balloons1500.jpg" alt="фото шаров">
+            </picture>
+            <h1 class="slogan__title">УЧИСЬ!<br> ИГРАЙ!<br> МЕЧТАЙ!</h1>
+        </section>
+
+        <div class="courses page__section page__section_1">
+            <section class="speed-reading courses__item">
+                <h2 class="visually-hidden">Курсы</h2>
+                <a class="courses__link" href="#">
+                    <h2 class="courses__title">Скорочтение</h2>
+                </a>
+                <p class="courses__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit, alias vero officia dolor atque accusantium quibusdam eveniet ea inventore,
+                    iure, totam tenetur aperiam repudiandae deleniti. Labore minus perferendis aut
+                    voluptatum.
+                </p>
             </section>
 
-            <div class="courses page__section page__section_1">
-                <section class="speed-reading courses__item">
-                    <h2 class="visually-hidden">Курсы</h2>
-                    <a class="courses__link" href="#">
-                        <h2 class="courses__title">Скорочтение</h2>
-                    </a>
-                    <p class="courses__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odit, alias vero officia dolor atque accusantium quibusdam eveniet ea inventore,
-                        iure, totam tenetur aperiam repudiandae deleniti. Labore minus perferendis aut
-                        voluptatum.
-                    </p>
-                </section>
+            <section class="maths courses__item">
+                <a class="courses__link" href="#">
+                    <h2 class="courses__title">Ментальная математика</h2>
+                </a>
+                <p class="courses__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa, illo
+                    iusto,
+                    deleniti unde repellat natus voluptatibus
+                    consectetur corporis tempore, hic accusamus dicta non dolorum! Veritatis harum neque vitae
+                    reiciendis!
+                </p>
+            </section>
 
-                <section class="maths courses__item">
-                    <a class="courses__link" href="#">
-                        <h2 class="courses__title">Ментальная математика</h2>
-                    </a>
-                    <p class="courses__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa, illo
-                        iusto,
-                        deleniti unde repellat natus voluptatibus
-                        consectetur corporis tempore, hic accusamus dicta non dolorum! Veritatis harum neque vitae
-                        reiciendis!
-                    </p>
-                </section>
+            <section class="logopediy courses__item">
+                <a class="courses__link" href="#">
+                    <h2 class="courses__title">Коррекция речи</h2>
+                </a>
+                <p class="courses__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+                    corporis
+                    praesentium similique neque possimus fugit delectus facere animi,
+                    impedit quod eos reprehenderit tenetur natus distinctio dolorum perferendis in voluptas totam.
+                </p>
+            </section>
+        </div>
+        <hr>
 
-                <section class="logopediy courses__item">
-                    <a class="courses__link" href="#">
-                        <h2 class="courses__title">Коррекция речи</h2>
+        <div class="about-us page__section page__section_2">
+            <h2 class="about-us__title">Наши преподаватели</h2>
+            <ul class="about-us__list">
+                <li class="about-us__item">
+                    <img class="about-us__img" src="img/teacher001.png" alt="foto">
+                    <a href="#">
+                        <h3 class="about-us__caption">Lorem ipsum dolor</h3>
                     </a>
-                    <p class="courses__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-                        corporis
-                        praesentium similique neque possimus fugit delectus facere animi,
-                        impedit quod eos reprehenderit tenetur natus distinctio dolorum perferendis in voluptas totam.
+                    <p class="about-us__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
                     </p>
-                </section>
-            </div>
-            <hr>
-
-            <div class="about-us page__section page__section_2">
-                <h2 class="about-us__title">Наши преподаватели</h2>
-                <ul class="about-us__list">
-                    <li class="about-us__item">
-                        <img class="about-us__img" src="img/teacher001.png" alt="foto">
-                        <a href="#">
-                            <h3 class="about-us__caption">Lorem ipsum dolor</h3>
-                        </a>
-                        <p class="about-us__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
-                        </p>
-                    </li>
-                    <li class="about-us__item">
-                        <img class="about-us__img" src="img/teacher002.png" alt="foto">
-                        <a href="#">
-                            <h3 class="about-us__caption">Lorem ipsum dolor</h3>
-                        </a>
-                        <p class="about-us__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
-                        </p>
-                    </li>
-                    <li class="about-us__item">
-                        <img class="about-us__img" src="img/teacher003.png" alt="foto">
-                        <a href="#">
-                            <h3 class="about-us__caption">Lorem ipsum dolor</h3>
-                        </a>
-                        <p class="about-us__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+                </li>
+                <li class="about-us__item">
+                    <img class="about-us__img" src="img/teacher002.png" alt="foto">
+                    <a href="#">
+                        <h3 class="about-us__caption">Lorem ipsum dolor</h3>
+                    </a>
+                    <p class="about-us__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
+                    </p>
+                </li>
+                <li class="about-us__item">
+                    <img class="about-us__img" src="img/teacher003.png" alt="foto">
+                    <a href="#">
+                        <h3 class="about-us__caption">Lorem ipsum dolor</h3>
+                    </a>
+                    <p class="about-us__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat beatae.
+                    </p>
+                </li>
+            </ul>
+        </div>
         </main>
 
         <footer class="page-footer page__section page__section_3">

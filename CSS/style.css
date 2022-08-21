@@ -760,18 +760,14 @@ button:hover {
 
     .menu__link,
     .popup__link {
+        margin: 0;
         font-size: 24px;
+        text-align: center;
     }
 
     .popup__link:hover {
         font-weight: normal;
         text-decoration: underline;
-    }
-
-    .header__popup {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .courses {
