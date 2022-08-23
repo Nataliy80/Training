@@ -90,7 +90,6 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: 210px;
     padding: 0;
     text-transform: uppercase;
     list-style: none;
@@ -110,7 +109,6 @@ img {
 main {
     flex: 1 1 auto;
 }
-
 
 .slogan {
     background-image: url(../img/balloons1500.jpg);
@@ -229,15 +227,11 @@ main {
     color: white;
 }
 
-.popup__link {
+.menu__link-pop {
     font-family: Roboto;
     color: #fff;
     padding: 0 10px 0 10px;
     text-transform: uppercase;
-}
-
-.popup__link:hover {
-    font-weight: bold;
 }
 
 .popup__body {
@@ -312,9 +306,11 @@ main {
 
 .user__input {
     margin-top: 5px;
+    padding-left: 10px;
     height: 25px;
     width: 350px;
     border-radius: 5px;
+
 }
 
 .user__input:focus {
@@ -350,7 +346,7 @@ button:hover {
 
 /* Форма авторизации */
 
-.popup-inp {
+.popup-in {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -364,18 +360,18 @@ button:hover {
     transition: all 0.8s ease 0s;
 }
 
-.popup-inp:target {
+.popup-in:target {
     opacity: 1;
     visibility: visible;
 }
 
 
-.popup-inp:target .popup-inp__content {
+.popup-in:target .popup-in__content {
     transform: translate(0px, 0px);
     opacity: 1;
 }
 
-.popup-inp__body {
+.popup-in__body {
     min-height: 100%;
     display: flex;
     align-items: center;
@@ -383,7 +379,7 @@ button:hover {
     padding: 30px 10px;
 }
 
-.popup-inp__content {
+.popup-in__content {
     position: relative;
     background-color: #fff;
     color: #000;
@@ -392,11 +388,11 @@ button:hover {
     transform: translate(0px, -100%);
 }
 
-.popup-inp__title {
+.popup-in__title {
     text-align: center;
 }
 
-.popup-inp__close {
+.popup-in__close {
     position: absolute;
     width: 21px;
     height: 21px;
@@ -407,8 +403,8 @@ button:hover {
     cursor: pointer;
 }
 
-.popup-inp__close::before,
-.popup-inp__close::after {
+.popup-in__close::before,
+.popup-in__close::after {
     content: "";
     position: absolute;
     width: 20px;
@@ -418,50 +414,50 @@ button:hover {
     background-color: #000;
 }
 
-.popup-inp__close::before {
+.popup-in__close::before {
     transform: rotate(45deg);
 }
 
-.popup-inp__close::after {
+.popup-in__close::after {
     transform: rotate(-45deg);
 }
 
-.form-inp {
+.form-in {
     margin: 0 auto;
     margin-top: 20px;
     width: 400px;
     height: 400px;
 }
 
-.form-inp__user {
+.form-in__user {
     height: 220px;
     border: none;
 }
 
-.user-inp__list {
+.user-in__list {
     margin: 0;
     padding: 0;
 }
 
-.user-inp__item {
+.user-in__item {
     margin: 0;
     padding: 5px;
     list-style: none;
 }
 
-.user-inp__input {
+.user-in__input {
     margin-top: 5px;
     height: 25px;
     width: 350px;
     border-radius: 5px;
 }
 
-.user-inp__input:focus {
+.user-in__input:focus {
     border: 2px solid #F3AE5F;
     transform: translateX(10px);
 }
 
-.user-inp__submit {
+.user-in__submit {
     margin-top: 10px;
     text-align: center;
 }
@@ -550,7 +546,7 @@ button:hover {
         line-height: 1;
     }
 
-    .popup__link {
+    .menu__link-pop {
         padding: 0 5px 0 5px;
         font-size: 14px;
     }
@@ -576,9 +572,6 @@ button:hover {
         font-size: 14px;
     }
 
-    .popup__link {
-        font-size: 12px;
-    }
 
     .header__logo {
         width: 30px;
@@ -656,16 +649,16 @@ button:hover {
         height: 35px;
     }
 
-    .popup-inp__body {
+    .popup-in__body {
         padding: 15px 5px;
     }
 
-    .form-inp {
+    .form-in {
         width: 300px;
         height: 350px;
     }
 
-    .user-inp__input {
+    .user-in__input {
         width: 250px;
 
     }
@@ -763,16 +756,10 @@ button:hover {
         margin: 0px 0px 30px 0px;
     }
 
-    .menu__link,
-    .popup__link {
+    .menu__link {
         margin: 0;
         font-size: 24px;
         text-align: center;
-    }
-
-    .popup__link:hover {
-        font-weight: normal;
-        text-decoration: underline;
     }
 
     .courses {
