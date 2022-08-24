@@ -227,7 +227,7 @@ main {
     color: white;
 }
 
-.menu__link-pop {
+.menu__link_pop {
     font-family: Roboto;
     color: #fff;
     padding: 0 10px 0 10px;
@@ -546,7 +546,7 @@ button:hover {
         line-height: 1;
     }
 
-    .menu__link-pop {
+    .menu__link_pop {
         padding: 0 5px 0 5px;
         font-size: 14px;
     }
@@ -571,7 +571,6 @@ button:hover {
         margin-right: 30px;
         font-size: 14px;
     }
-
 
     .header__logo {
         width: 30px;
