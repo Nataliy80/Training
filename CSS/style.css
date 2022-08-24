@@ -122,6 +122,7 @@ main {
     position: absolute;
     top: 100px;
     left: 250px;
+    width: 200px;
     color: #fff;
     letter-spacing: 7px;
     line-height: 2em;
@@ -149,13 +150,20 @@ main {
     color: #000;
 }
 
+.courses__title {
+    margin: 0;
+}
+
 .courses__text {
     font-family: Roboto, Arial, sans-serif;
     margin: 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     text-overflow: ellipsis;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .about-us {
@@ -253,8 +261,8 @@ main {
 
 .popup__close {
     position: absolute;
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
     right: 25px;
     top: 20px;
     text-decoration: none;
@@ -307,10 +315,9 @@ main {
 .user__input {
     margin-top: 5px;
     padding-left: 10px;
-    height: 25px;
+    height: 30px;
     width: 350px;
     border-radius: 5px;
-
 }
 
 .user__input:focus {
@@ -324,7 +331,7 @@ label {
 }
 
 .user__submit {
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -447,7 +454,8 @@ button:hover {
 
 .user-in__input {
     margin-top: 5px;
-    height: 25px;
+    padding-left: 10px;
+    height: 30px;
     width: 350px;
     border-radius: 5px;
 }
