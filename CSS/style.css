@@ -9,7 +9,7 @@ body {
     padding: 0;
     color: #000000;
     background-color: #ffffff;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
@@ -21,6 +21,7 @@ body._lock {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 img {
@@ -44,6 +45,12 @@ img {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .header {
@@ -128,40 +135,30 @@ main {
     line-height: 2em;
 }
 
-.courses {
+.courses__inner {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    max-width: 1200px;
+    min-height: 70vh;
 }
 
 .courses__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 260px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.courses__link {
-    text-align: center;
-    color: #000;
+    margin-top: 100px;
 }
 
 .courses__title {
-    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .courses__text {
-    font-family: Roboto, Arial, sans-serif;
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 15px 0 30px;
     padding: 10px;
     text-align: left;
-    text-overflow: ellipsis;
     font-size: 16px;
     overflow: hidden;
 }
@@ -670,6 +667,15 @@ button:hover {
 
     }
 
+    .courses__inner {
+        flex-direction: column;
+    }
+
+    .courses__item {
+        margin-top: 30px;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -767,13 +773,5 @@ button:hover {
         margin: 0;
         font-size: 24px;
         text-align: center;
-    }
-
-    .courses {
-        flex-direction: column;
-    }
-
-    .courses__item {
-        height: auto;
     }
 }
