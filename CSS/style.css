@@ -66,10 +66,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1440px;
     min-height: 100px;
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 
 .header__logo {
@@ -79,7 +79,6 @@ img {
     z-index: 5;
     width: 40px;
     height: 40px;
-
 }
 
 .menu__icon {
@@ -138,6 +137,7 @@ main {
 .courses__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-height: 70vh;
 }
 
@@ -145,7 +145,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 35px;
+    max-width: 360px;
+    min-height: 375px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
 
 .courses__title {
@@ -157,14 +161,15 @@ main {
 .courses__text {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 15px 0 30px;
-    padding: 10px;
+    padding: 0 20px 0 20px;
     text-align: left;
     font-size: 16px;
+    letter-spacing: 0.2px;
     overflow: hidden;
 }
 
 .about-us {
-    min-height: 550px;
+    min-height: 70vh;
 }
 
 .about-us__title {
@@ -190,6 +195,12 @@ main {
     list-style: none;
 }
 
+.about-us__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-us__img {
     box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
 }
@@ -199,7 +210,6 @@ main {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-
 }
 
 /* Форма регистрации */
@@ -479,6 +489,8 @@ button:hover {
     font-weight: bold;
 }
 
+/* -------------------- */
+
 .page-footer {
     display: flex;
     flex-direction: column;
@@ -560,6 +572,10 @@ button:hover {
         left: 150px;
     }
 
+    .courses__item {
+        max-width: 300px;
+    }
+
     .about-us {
         margin-bottom: 30px;
     }
@@ -588,21 +604,23 @@ button:hover {
         left: 70px;
     }
 
-    .social__item {
-        padding-right: 50px;
-    }
-
     .courses {
-        padding: 20px 40px;
+        padding: 10px 10px;
     }
 
     .courses__item {
-        min-height: 170px;
+        max-width: 250px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .courses__title,
     .about-us__title {
         font-size: 20px;
+    }
+
+    .courses__btn {
+        margin-bottom: 25px;
     }
 
     .courses__text,
@@ -613,6 +631,10 @@ button:hover {
     .about-us__list {
         flex-direction: column;
         align-items: center;
+    }
+
+    .about-us__item {
+        margin-bottom: 50px;
     }
 
     .about-us__title {
@@ -664,18 +686,7 @@ button:hover {
 
     .user-in__input {
         width: 250px;
-
     }
-
-    .courses__inner {
-        flex-direction: column;
-    }
-
-    .courses__item {
-        margin-top: 30px;
-        height: auto;
-    }
-
 }
 
 @media (max-width: 767px) {
@@ -773,5 +784,13 @@ button:hover {
         margin: 0;
         font-size: 24px;
         text-align: center;
+    }
+
+    .courses__inner {
+        flex-direction: column;
+    }
+
+    .courses__item {
+        max-width: 370px;
     }
 }
