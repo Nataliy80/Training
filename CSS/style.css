@@ -490,12 +490,17 @@ button:hover {
 }
 
 /* -------------------- */
-
 .page-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3AE5F;
+}
+
+.footer__info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F3AE5F;
+    margin-left: 100px;
 }
 
 .page-footer__contact,
@@ -515,6 +520,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    margin-top: 35px;
     padding: 0;
 }
 
@@ -549,6 +555,18 @@ button:hover {
 .contact__mail,
 .contact__adress {
     color: #fff;
+}
+
+.footer__map {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer__map iframe {
+    width: 100%;
+    width: 600px;
+    height: 300px;
+    margin-right: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -645,8 +663,24 @@ button:hover {
         font-size: 18px;
     }
 
+    .footer__info {
+        margin-left: 20px;
+    }
+
+    .contact {
+        padding: 10px 20px;
+    }
+
+    .contact__title {
+        font-size: 16px;
+    }
+
     .social__item {
         padding-right: 30px;
+    }
+
+    .footer__map iframe {
+        width: 450px;
     }
 
     .popup__body {
@@ -792,5 +826,14 @@ button:hover {
 
     .courses__item {
         max-width: 370px;
+    }
+
+    .page-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__map iframe {
+        margin: 0 auto;
     }
 }
