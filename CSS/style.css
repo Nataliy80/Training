@@ -652,7 +652,17 @@ button:hover {
     }
 
     .about-us__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
         margin-bottom: 50px;
+    }
+
+    .about-us__info {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 160px;
     }
 
     .about-us__title {
