@@ -243,7 +243,7 @@ main {
 }
 
 .menu__link_pop {
-    font-family: Roboto;
+    font-family: 'Roboto';
     color: #fff;
     padding: 0 10px 0 10px;
     text-transform: uppercase;
@@ -509,7 +509,7 @@ button:hover {
 }
 
 .contact__title {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
